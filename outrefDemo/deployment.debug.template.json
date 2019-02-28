@@ -39,6 +39,15 @@
           }
         },
         "modules": {
+          "outside": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image":"${MODULES.outside.debug}"
+            }
+          },
           "tempSensor": {
             "version": "1.0",
             "type": "docker",
